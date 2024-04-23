@@ -1,0 +1,704 @@
+@font-face {
+    font-family: Photonica;
+    src: url('./Photonica/Photonica_regular.ttf');
+}
+
+:root {
+    --text-color: #000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Prompt", sans-serif;
+}
+
+body {
+    background-color: #f8f3f3;
+    color: #000;
+}
+
+/* ----------navbar---------- */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 27px 9%;
+    transition: all ease .55s;
+    background-color: #a3a3a3;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-family: "Photonica", sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.nav-list {
+    display: flex;
+    margin-left: 450px;
+}
+
+.nav-list a {
+    font-weight: 600;
+    margin: 0 12px;
+    color: var(--text-color);
+    transition: all ease .55s;
+}
+
+.nav-list a:hover {
+    color: #626262;
+}
+
+.h-main {
+    display: flex;
+    align-items: center;
+}
+
+.h-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    color: #000;
+    background-color: #bababa;
+    font-weight: 500;
+    border-radius: 2px;
+    border: 2px solid var(#000);
+    margin-right: 20px;
+    transition: all ease .55s;
+}
+
+.h-btn:hover {
+    background-color: #d7d5d5;
+}
+
+#manu-icon {
+    font-size: 40px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    margin: 15px;
+    display: none;
+}
+
+#manu-icon:hover {
+    color: #626262;
+}
+
+#darkmode {
+    font-size: 30px;
+    color: var(--text-color);
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+/* ----------home---------- */
+section {
+    padding: 0 12%;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.home-text h1 {
+    font-size: 3.2rem;
+    font-family: "Photonica", sans-serif;
+}
+
+.home-text h4 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+.home-in {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.box {
+    margin-top: 20px;
+}
+
+.box h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.box img {
+    width: 80%;
+}
+
+.box:hover {
+    transform: scale(1.2);
+    transition: transform 1.5s ease;
+}
+
+.box:not(:hover) {
+    transform: scale(1);
+    transition: transform 1.5s ease;
+}
+
+.home-img {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.box-home {
+    margin-top: 60px;
+}
+
+.box-home img {
+    width: 65%;
+    top: 200px;
+}
+
+.box-home h3{
+    font-size: 1.4rem;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: uppercase;
+
+}
+
+.home-img:hover {
+    transform: scale(1.2);
+    transition: transform 1.5s ease;
+}
+
+.home-img:not(:hover) {
+    transform: scale(1);
+    transition: transform 1.5s ease;
+}
+
+body.color {
+    background-color: #292929;
+    color: #d7d5d5;
+}
+
+/* ----------product---------- */
+.product-r32 {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.r32-img {
+    display: grid;
+    gap: 60px;
+    margin-top: 40px;
+    left: 50%;
+    grid-template-columns: repeat(2, 4fr);
+}
+
+.r32-img img {
+    width: 100%;
+       
+}
+
+.product-r33 {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.r33-img {
+    display: grid;
+    gap: 60px;
+    margin-top: 40px;
+    left: 50%;
+    grid-template-columns: repeat(2, 4fr);
+}
+
+.r33-img img {
+    width: 100%;
+       
+}
+
+.product-r34 {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.r34-img {
+    display: grid;
+    gap: 60px;
+    margin-top: 40px;
+    left: 50%;
+    grid-template-columns: repeat(2, 4fr);
+}
+
+.r34-img img {
+    width: 100%;
+       
+}
+
+.product-r35 {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.r35-img {
+    display: grid;
+    gap: 60px;
+    margin-top: 40px;
+    left: 50%;
+    grid-template-columns: repeat(2, 4fr);
+}
+
+.r35-img img {
+    width: 100%;
+       
+}
+
+.product img:hover {
+    transform: scale(1.1);
+    transition: transform 1.5s ease;
+}
+
+.product img:not(:hover) {
+    transform: scale(1);
+    transition: transform 1.5s ease;
+}
+
+/* ----------contact---------- */
+.contact {
+    margin-top: 100px;
+    padding: 50px 100px;
+    background-color: #626262;
+    color: #ffffff;
+}
+
+.contact-title h3 {
+    font-size: 3rem;
+   
+}
+
+.contact-title h5 {
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+.contact-title i {
+    font-size: 40px;
+    padding-left: 0.3rem;
+    color: #ffffff;
+}
+
+.contact-title i:hover {
+    transform: scale(1.2);
+    transition: transform 1.5s ease;
+}
+
+.contact-title i:not(:hover) {
+    transform: scale(1.1);
+    transition: transform 1.5s ease;
+}
+
+
+/* ----------footer---------- */
+footer {
+    background-color: #333;
+    color: #ffffff;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: -2px;
+    padding: 4px;
+}
+
+/* ----------responsive---------- */
+@media only screen and (max-width: 320px) {
+    header {
+        padding: 1px 3%;
+    }
+    
+    section {
+        padding: 100px 0;
+    }
+
+    .logo {
+        font-size: 13px;
+    }
+
+    .h-btn {
+        font-size: 6px;
+    }
+
+    #manu-icon {
+        display: inline;
+        font-size: 35px;
+        margin-left: -15px;
+        margin-right: -6px;
+    }
+
+    #darkmode {
+        font-size: 27px;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: -700px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #a3a3a3;
+        transition: all ease-out .35s;
+        text-align: left;
+        padding-right: 100px;
+        right: 100px;
+        padding-left: 850px;
+        padding-right: 200px;
+        left: -950px;
+    }
+
+    .nav-list a {
+        display: block;
+        font-size: 14px;
+        margin: 0.2rem 1rem;
+        margin-left: -330px;
+    }
+
+    .nav-list.open {
+        top: 100%;
+    }
+
+    /* ----------home---------- */
+    .home {
+        grid-template-columns: repeat(1, 1fr);
+        top: -110px;
+    }
+
+    .home-text h1 {
+        text-align: center;
+        font-size: 26px;
+        font-family: "Photonica", sans-serif;
+    }
+    
+    .home-text h4 {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 300;
+        margin-top: 6px;
+        font-style: italic;
+    }
+
+    .box {
+        display: none;
+    }
+
+    .box-home {
+        display: none;
+    }
+
+    /* ----------product---------- */
+    .product-r32 {
+        font-size: 18px;
+        font-style: italic;
+        left: 50%;
+        right: 50%;
+        margin-top: -620px;
+    }
+
+    .product-r33 {
+        margin-top: 55px;
+        font-size: 18px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .product-r34 {
+        margin-top: 55px;
+        font-size: 18px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .product-r35 {
+        margin-top: 55px;
+        font-size: 18px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .r32-img {
+        grid-template-columns: repeat(1, 1fr);
+        width: 65%;
+        gap: 26px;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+
+    .r33-img {
+        grid-template-columns: repeat(1, 1fr);
+        width: 65%;
+        gap: 26px;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+
+    .r34-img {
+        grid-template-columns: repeat(1, 1fr);
+        width: 65%;
+        gap: 26px;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+
+    .r35-img {
+        grid-template-columns: repeat(1, 1fr);
+        width: 65%;
+        gap: 26px;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+
+    /* ----------contact---------- */
+    .contact {
+        padding: 20px 100px;
+        margin-top: -52px;
+        text-align: center;
+        background-color: #626262;
+        color: #ffffff;
+    }
+
+    .contact-title h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-title h5 {
+        margin-left: 0px;
+        font-size: 1.1rem;
+        margin-bottom: 4px;
+    }
+
+    .contact-title i {
+        display: block;
+        font-size: 32px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+
+    /* ----------footer---------- */
+    footer {
+        background-color: #333;
+        color: #ffffff;
+        font-weight: lighter;
+        text-align: center;
+        margin-top: -12px;
+        padding: 4px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 1px 3%;
+    }
+    
+    section {
+        padding: 100px 0;
+    }
+
+    .logo {
+        font-size: 13px;
+    }
+
+    .h-btn {
+        font-size: 6px;
+    }
+
+    #manu-icon {
+        display: inline;
+        font-size: 35px;
+        margin-left: -15px;
+        margin-right: -6px;
+    }
+
+    #darkmode {
+        font-size: 27px;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: -700px;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: #a3a3a3;
+        transition: all ease-out .35s;
+        text-align: left;
+        padding-right: 100px;
+        right: 100px;
+        padding-left: 850px;
+        padding-right: 200px;
+        left: -950px;
+    }
+
+    .nav-list a {
+        display: block;
+        font-size: 14px;
+        margin: 0.2rem 1rem;
+        margin-left: -330px;
+    }
+
+    .nav-list.open {
+        top: 100%;
+    }
+
+    /* ----------home---------- */
+    .home {
+        grid-template-columns: repeat(1, 1fr);
+        top: -110px;
+    }
+
+    .home-text h1 {
+        text-align: center;
+        font-size: 26px;
+        font-family: "Photonica", sans-serif;
+    }
+    
+    .home-text h4 {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 300;
+        margin-top: 6px;
+        font-style: italic;
+    }
+
+    .box {
+        display: none;
+    }
+
+    .box-home {
+        display: none;
+    }
+
+    /* ----------product---------- */
+    .product-r32 {
+        font-size: 18px;
+        font-style: italic;
+        left: 50%;
+        right: 50%;
+        margin-top: -740px;
+    }
+
+    .product-r33 {
+        margin-top: 55px;
+        font-size: 18px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .product-r34 {
+        margin-top: 55px;
+        font-size: 18px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .product-r35 {
+        margin-top: 55px;
+        font-size: 18px;
+        font-style: italic;
+        text-align: center;
+    }
+
+    .r32-img {
+        grid-template-columns: repeat(1, 1fr);
+        width: 65%;
+        gap: 26px;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+
+    .r33-img {
+        grid-template-columns: repeat(1, 1fr);
+        width: 65%;
+        gap: 26px;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+
+    .r34-img {
+        grid-template-columns: repeat(1, 1fr);
+        width: 65%;
+        gap: 26px;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+
+    .r35-img {
+        grid-template-columns: repeat(1, 1fr);
+        width: 65%;
+        gap: 26px;
+        margin: 0 auto;
+        margin-top: 18px;
+    }
+
+    /* ----------contact---------- */
+    .contact {
+        padding: 20px 100px;
+        margin-top: -52px;
+        text-align: center;
+        background-color: #626262;
+        color: #ffffff;
+    }
+
+    .contact-title h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-title h5 {
+        margin-left: 0px;
+        font-size: 1.1rem;
+        margin-bottom: 4px;
+    }
+
+    .contact-title i {
+        display: block;
+        font-size: 32px;
+        margin-left: 0px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+
+    /* ----------footer---------- */
+    footer {
+        background-color: #333;
+        color: #ffffff;
+        font-weight: lighter;
+        text-align: center;
+        margin-top: -12px;
+        padding: 4px;
+    }
+}
